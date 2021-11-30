@@ -23,14 +23,14 @@
     <div class="container intro p-5">
         <form>
             <div class="form-group">
-                <input type="text" placeholder="What is your focus for today?" class="form-control" id="inpText">
+                <input type="text" placeholder="What is your focus for today?" class="form-control" id="inputField">
             </div>
         </form>
         <i class="submit fas fa-plus-square" id="adding" onclick="addTodo()"></i>
-        <i class="delete fas fa-trash" delTodo()></i>
+        <i class="delete fas fa-trash" onclick="delTodo()"></i>
     </div>
 
-    <div class="container-fluid text-center">
+    <div class="container text-center">
         <ul id="todoList"></ul>
     </div>
 
