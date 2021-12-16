@@ -25,7 +25,7 @@ var listItems = document.getElementById('todoList');
 // })
 
 firebase.database().ref('todos').on('child_added', function (data) {
-    // console.log(data.val());
+    console.log(data.val());
 
     if (inputField.value.length > 2) {
         var list = document.createElement('li');
