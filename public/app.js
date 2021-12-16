@@ -53,7 +53,10 @@ firebase.database().ref('todos').on('child_added', function (data) {
         list.appendChild(delBtn);
         delBtn.className = ('delBtn');
 
-        listItems.appendChild(list)
+        listItems.appendChild(list);
+
+        inputField.value = "";
+
     }
 });
 
